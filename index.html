@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mai Hường — Cuộc Sống Tươi Đẹp | Sáng Tạo, Kết Nối & Lan Tỏa Yêu Thương</title>
+  <meta name="description" content="Chào mừng bạn đến với website chính thức của Mai Hường - Cuộc Sống Tươi Đẹp. Nơi chia sẻ năng lượng tích cực, ứng dụng AI sáng tạo âm nhạc & video, và những hành trình trải nghiệm tuyệt vời. Liên hệ: 0982 909 515." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient Background Canvas & Blobs -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#trang-chu" class="brand-logo" aria-label="Mai Hường Cuộc Sống Tươi Đẹp">
+        <img src="a1.jpg" alt="Mai Hường" class="brand-avatar" />
+        <div class="brand-text">
+          <span class="brand-name">Mai Hường</span>
+          <span class="brand-tagline">Cuộc Sống Tươi Đẹp</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#trang-chu" class="nav-link active">Trang chủ</a>
+        <a href="#cau-chuyen" class="nav-link">Câu chuyện</a>
+        <a href="#video-noi-bat" class="nav-link">Video Nổi Bật</a>
+        <a href="#sang-tao-ai" class="nav-link">Sáng tạo AI</a>
+        <a href="#khoanh-khac" class="nav-link">Khoảnh khắc</a>
+        <a href="#lien-he" class="nav-link">Liên hệ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Đổi giao diện Sáng/Tối" title="Đổi chế độ Sáng / Tối">
+          <i data-lucide="sun" class="icon-sun"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+        </button>
+        <a href="tel:0982909515" class="btn btn-primary btn-sm">
+          <i data-lucide="phone-call" class="btn-icon"></i>
+          <span>0982 909 515</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mở menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="trang-chu" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-up">
+          <div class="pill-badge">
+            <span class="pulse-dot"></span>
+            <span>Sáng Tạo • Kết Nối • Lan Tỏa • Yêu Thương</span>
+          </div>
+
+          <h1 class="hero-title">
+            Mai Hường
+            <span class="gradient-serif">Cuộc Sống Tươi Đẹp</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Chào mừng bạn đến với không gian truyền cảm hứng của <strong>Mai Hường</strong> — nơi lưu giữ những khoảnh khắc bình yên, chia sẻ đam mê sáng tạo âm nhạc &amp; video bằng AI từ trái tim, và lan tỏa nguồn năng lượng sống khỏe, sống đẹp mỗi ngày.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#video-noi-bat" class="btn btn-primary btn-lg">
+              <i data-lucide="play-circle" class="btn-icon"></i>
+              <span>Xem Video Nổi Bật</span>
+            </a>
+            <a href="https://www.facebook.com/huong.tn.34518" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-lg">
+              <i data-lucide="facebook" class="btn-icon"></i>
+              <span>Facebook Mai Hường</span>
+            </a>
+            <a href="tel:0982909515" class="btn btn-outline btn-lg">
+              <i data-lucide="phone" class="btn-icon"></i>
+              <span>0982 909 515</span>
+            </a>
+          </div>
+
+          <!-- Quick Trust / Highlight Metrics -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">AI &amp; Music</span>
+              <span class="stat-label">Từ AI đến Trái Tim</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Năng lượng tích cực</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">24/7</span>
+              <span class="stat-label">Kết nối chân thành</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-scale">
+          <div class="visual-card-stack">
+            <div class="halo-ring"></div>
+
+            <!-- Main Portrait Frame using real photo a1.jpg -->
+            <div class="hero-frame">
+              <img
+                src="a1.jpg"
+                alt="Chân dung Mai Hường - Cuộc Sống Tươi Đẹp"
+                class="hero-main-img"
+              />
+              <div class="hero-frame-overlay">
+                <div class="quote-chip">
+                  <i data-lucide="sparkles"></i>
+                  <span>“Vì bạn xứng đáng có một tác phẩm &amp; cuộc sống tươi đẹp của riêng mình!”</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Card 1: Direct Video Trigger -->
+            <a href="#video-noi-bat" class="floating-card card-video-preview">
+              <div class="play-badge">
+                <i data-lucide="play"></i>
+              </div>
+              <div>
+                <strong>Thước Phim Tâm Đắc</strong>
+                <span>Thưởng thức trên YouTube</span>
+              </div>
+            </a>
+
+            <!-- Floating Card 2: Quick Hotline -->
+            <a href="tel:0982909515" class="floating-card card-contact-preview">
+              <div class="icon-circle emerald">
+                <i data-lucide="phone-call"></i>
+              </div>
+              <div>
+                <span>Hotline / Zalo kết nối</span>
+                <strong>0982 909 515</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#cau-chuyen" class="scroll-indicator" aria-label="Cuộn xuống">
+        <span>Khám phá hành trình</span>
+        <i data-lucide="chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- MARQUEE RIBBON -->
+    <div class="marquee-banner" aria-hidden="true">
+      <div class="marquee-track">
+        <span>✦ MAI HƯỜNG CUỘC SỐNG TƯƠI ĐẸP</span>
+        <span>✦ TỪ AI ĐẾN TRÁI TIM</span>
+        <span>✦ SÁNG TẠO • KẾT NỐI • LAN TỎA • YÊU THƯƠNG</span>
+        <span>✦ HOTLINE / ZALO: 0982 909 515</span>
+        <span>✦ NĂNG LƯỢNG TÍCH CỰC MỖI NGÀY</span>
+        <span>✦ MAI HƯỜNG CUỘC SỐNG TƯƠI ĐẸP</span>
+        <span>✦ TỪ AI ĐẾN TRÁI TIM</span>
+        <span>✦ SÁNG TẠO • KẾT NỐI • LAN TỎA • YÊU THƯƠNG</span>
+        <span>✦ HOTLINE / ZALO: 0982 909 515</span>
+        <span>✦ NĂNG LƯỢNG TÍCH CỰC MỖI NGÀY</span>
+      </div>
+    </div>
+
+    <!-- STORY / ABOUT SECTION -->
+    <section id="cau-chuyen" class="section about-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow">Về Mai Hường</span>
+          <h2 class="section-title">Lan Tỏa Năng Lượng &amp; <span class="gradient-serif">Vẻ Đẹp Cuộc Sống</span></h2>
+          <p class="section-desc">
+            Cuộc sống tươi đẹp bắt nguồn từ tâm hồn cởi mở, niềm say mê học hỏi công nghệ mới và những bước chân rạng rỡ bên gia đình, bạn bè.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Bento Item 1: Main Story -->
+          <div class="bento-card bento-large reveal-up">
+            <div class="bento-badge">
+              <i data-lucide="heart-handshake"></i>
+              <span>Câu chuyện &amp; Sứ mệnh</span>
+            </div>
+            <h3>Sống Trọn Vẹn Từng Khoảnh Khắc Yêu Thương</h3>
+            <p>
+              Với <strong>Mai Hường</strong>, mỗi ngày mới là một cơ hội để học hỏi, sẻ chia và trao đi giá trị tích cực. Không chỉ yêu thích vận động, du lịch khám phá vẻ đẹp đất nước Việt Nam và gắn kết cộng đồng, Mai Hường còn tiên phong truyền cảm hứng ứng dụng công nghệ AI vào âm nhạc và sáng tạo video.
+            </p>
+            <p>
+              Từ những buổi chia sẻ Zoom Online <em>“Từ AI đến Trái Tim”</em> cho tới những cung đường chạy bộ đón bình minh, Mai Hường luôn mong muốn giúp mọi người lưu giữ cảm xúc chân thật nhất qua từng giai điệu và khung hình.
+            </p>
+            <div class="signature-row">
+              <div class="signature-text">Mai Hường</div>
+              <span class="signature-role">Người truyền cảm hứng • Sáng tạo AI &amp; Phong cách sống</span>
+            </div>
+          </div>
+
+          <!-- Bento Item 2: Real Photo Accent -->
+          <div class="bento-card bento-image reveal-up">
+            <img
+              src="1793347365790_2229516208072650681_9100847795049345797_c43d0c38bfc168f59834ee3a9cd72d75.jpg"
+              alt="Nụ cười rạng rỡ và ấm áp của Mai Hường"
+              loading="lazy"
+              class="lightbox-trigger"
+            />
+            <div class="bento-img-caption">
+              <span>Nụ cười rạng rỡ &amp; Hạnh phúc giản dị mỗi ngày</span>
+            </div>
+          </div>
+
+          <!-- Bento Item 3: Daily Quote Interactive -->
+          <div class="bento-card bento-quote reveal-up">
+            <div class="quote-header">
+              <span class="quote-tag"><i data-lucide="sun"></i> Thông điệp hôm nay</span>
+              <button class="btn-icon-only" id="newQuoteBtn" title="Đổi thông điệp mới">
+                <i data-lucide="refresh-cw"></i>
+              </button>
+            </div>
+            <blockquote id="dailyQuoteText" class="daily-quote-text">
+              “Cùng nhau tạo nên những giai điệu, những hình ảnh và những khoảnh khắc thật đẹp từ chính cảm xúc trong trái tim bạn!”
+            </blockquote>
+            <div class="quote-footer">— Mai Hường Cuộc Sống Tươi Đẹp</div>
+          </div>
+
+          <!-- Bento Item 4: Direct Connect Card -->
+          <div class="bento-card bento-connect reveal-up">
+            <div class="connect-top">
+              <img src="a1.jpg" alt="Mai Hường" class="connect-avatar" />
+              <div>
+                <h4>Kết nối trực tiếp cùng Mai Hường</h4>
+                <p>Giao lưu, chia sẻ &amp; đồng hành tận tâm</p>
+              </div>
+            </div>
+            <div class="connect-links">
+              <a href="tel:0982909515" class="connect-pill">
+                <i data-lucide="phone"></i>
+                <span>SĐT / Zalo: 0982 909 515</span>
+              </a>
+              <a href="https://www.facebook.com/huong.tn.34518" target="_blank" rel="noopener noreferrer" class="connect-pill">
+                <i data-lucide="facebook"></i>
+                <span>Facebook Mai Hường</span>
+              </a>
+              <a href="https://youtu.be/lOwUVSzzGEw?si=_O3grBPipm6LDsB2" target="_blank" rel="noopener noreferrer" class="connect-pill">
+                <i data-lucide="youtube"></i>
+                <span>Kênh YouTube Chính Thức</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED YOUTUBE VIDEO SECTION -->
+    <section id="video-noi-bat" class="section video-section">
+      <div class="container">
+        <div class="video-showcase reveal-up">
+          <div class="video-info">
+            <span class="section-eyebrow">Thước Phim Tâm Đắc</span>
+            <h2 class="section-title">Giai Điệu &amp; Khoảnh Khắc <span class="gradient-serif">Cuộc Sống Tươi Đẹp</span></h2>
+            <p class="video-description">
+              Mời bạn cùng thưởng thức video đặc biệt của <strong>Mai Hường</strong> trên YouTube — nơi giai điệu, hình ảnh và cảm xúc hòa quyện để tôn vinh vẻ đẹp của cuộc sống. Hãy nhấn Xem, Yêu thích và Chia sẻ để lan tỏa năng lượng tích cực nhé!
+            </p>
+
+            <div class="video-features">
+              <div class="v-feature">
+                <i data-lucide="music-4"></i>
+                <span>Giai điệu chạm đến trái tim, hình ảnh sống động</span>
+              </div>
+              <div class="v-feature">
+                <i data-lucide="sparkles"></i>
+                <span>Sự kết hợp tinh tế giữa cảm xúc thật và sáng tạo hiện đại</span>
+              </div>
+              <div class="v-feature">
+                <i data-lucide="heart"></i>
+                <span>Mang lại nguồn cảm hứng yêu đời và bình yên</span>
+              </div>
+            </div>
+
+            <div class="video-actions">
+              <a href="https://youtu.be/lOwUVSzzGEw?si=_O3grBPipm6LDsB2" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-lg">
+                <i data-lucide="youtube" class="btn-icon"></i>
+                <span>Xem Trên YouTube</span>
+                <i data-lucide="external-link" class="btn-icon-right"></i>
+              </a>
+              <a href="https://www.facebook.com/huong.tn.34518" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-lg">
+                <i data-lucide="share-2" class="btn-icon"></i>
+                <span>Chia Sẻ Cảm Xúc</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="video-player-wrapper">
+            <div class="cinema-glow"></div>
+            <div class="video-frame-container">
+              <div class="video-browser-bar">
+                <div class="browser-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser-url">
+                  <i data-lucide="lock" class="lock-icon"></i>
+                  <span>youtu.be/lOwUVSzzGEw</span>
+                </div>
+                <a href="https://youtu.be/lOwUVSzzGEw?si=_O3grBPipm6LDsB2" target="_blank" rel="noopener noreferrer" class="browser-open" title="Mở trên YouTube">
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </div>
+              <div class="responsive-iframe">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/lOwUVSzzGEw?rel=0"
+                  title="Mai Hường Cuộc Sống Tươi Đẹp - Video YouTube Nổi Bật"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-fallback-bar">
+                <span>Nếu trình duyệt chặn nhúng hoặc muốn xem chất lượng 4K toàn màn hình:</span>
+                <a href="https://youtu.be/lOwUVSzzGEw?si=_O3grBPipm6LDsB2" target="_blank" rel="noopener noreferrer">
+                  Mở trực tiếp tại đây →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI CREATIVITY & WORKSHOPS SECTION (Using real banners a7.jpg & a8.jpg) -->
+    <section id="sang-tao-ai" class="section ai-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow">Đam Mê &amp; Chia Sẻ Tri Thức</span>
+          <h2 class="section-title">Từ AI Đến Trái Tim — <span class="gradient-serif">Sáng Tạo Không Giới Hạn</span></h2>
+          <p class="section-desc">
+            Đồng hành cùng cộng đồng ứng dụng trí tuệ nhân tạo (AI) một cách gần gũi, dễ dàng để biến những cảm xúc chân thành thành bài hát, hình ảnh và thước phim sống động.
+          </p>
+        </div>
+
+        <div class="ai-showcase-grid">
+          <!-- Program 1: Từ AI đến Trái Tim (a7.jpg) -->
+          <article class="ai-card reveal-up">
+            <div class="ai-card-media">
+              <img src="a7.jpg" alt="Từ AI đến Trái Tim - Trải nghiệm thực hành AI cùng âm nhạc - Mai Hường" class="lightbox-trigger" loading="lazy" />
+              <span class="ai-tag">AI &amp; Âm Nhạc</span>
+            </div>
+            <div class="ai-card-body">
+              <h3>Từ AI Đến Trái Tim — Thực Hành AI Cùng Âm Nhạc</h3>
+              <p>
+                Vì bạn xứng đáng có một tác phẩm âm nhạc của riêng mình! Hành trình 4 bước giản dị mà kỳ diệu: Tạo bài hát trên Suno → Tạo hình ảnh, video trên Flow AI → Ghép &amp; chỉnh sửa → Hoàn thiện tác phẩm mang đậm dấu ấn cá nhân.
+              </p>
+              <div class="ai-pill-list">
+                <span><i data-lucide="music"></i> Sáng tác nhạc Suno AI</span>
+                <span><i data-lucide="clapperboard"></i> Flow AI Video</span>
+                <span><i data-lucide="heart"></i> Kết nối yêu thương</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Program 2: Thực hành Tạo Video bằng AI (a8.jpg) -->
+          <article class="ai-card reveal-up">
+            <div class="ai-card-media">
+              <img src="a8.jpg" alt="Thực Hành Tạo Video Bằng AI - Người trình bày Mai Hường" class="lightbox-trigger" loading="lazy" />
+              <span class="ai-tag gold">Đào Tạo Thực Chiến</span>
+            </div>
+            <div class="ai-card-body">
+              <h3>Thực Hành Tạo Video Bằng AI</h3>
+              <p>
+                Học AI dễ dàng • Ứng dụng thực tế • Nhân công suất! Những buổi chia sẻ trực tuyến ấm áp qua Zoom cùng Mai Hường giúp bất kỳ ai cũng có thể tự tin làm chủ công nghệ và sáng tạo nội dung cuốn hút.
+              </p>
+              <div class="ai-pill-list">
+                <span><i data-lucide="zap"></i> Học AI dễ dàng</span>
+                <span><i data-lucide="video"></i> Ứng dụng thực tế</span>
+                <span><i data-lucide="trending-up"></i> Nhân công suất</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REAL PHOTO GALLERY SECTION -->
+    <section id="khoanh-khac" class="section gallery-section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-eyebrow">Album Kỷ Niệm Đẹp</span>
+          <h2 class="section-title">Hành Trình Sống Khỏe, <span class="gradient-serif">Yêu Đời &amp; Gắn Kết</span></h2>
+          <p class="section-desc">
+            Những khoảnh khắc đời thường tràn đầy năng lượng của Mai Hường bên người thân, bạn bè trên khắp mọi miền Tổ quốc. Nhấn vào từng ảnh để xem kích thước lớn!
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item item-wide reveal-up">
+            <img src="a5.jpg" alt="Hành trình khám phá thiên nhiên tươi đẹp cùng những người bạn" loading="lazy" class="lightbox-trigger" />
+            <div class="gallery-overlay">
+              <span>Hành trình gắn kết</span>
+              <strong>Giữa thiên nhiên đất trời bao la</strong>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-up">
+            <img src="1793347377598_2229516208072650681_9100847795049345797_2b7dfc8bf5fc777b4947fef0cbc802f0.jpg" alt="Màu áo cờ đỏ sao vàng rạng rỡ trên cung đường nắng đẹp" loading="lazy" class="lightbox-trigger" />
+            <div class="gallery-overlay">
+              <span>Tự hào Việt Nam</span>
+              <strong>Nụ cười rạng rỡ dưới nắng vàng</strong>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-up">
+            <img src="1793347372016_2229516208072650681_9100847795049345797_e1dd76186a294869f19e41af8686ecaa.jpg" alt="Phút giây tĩnh tâm đón bình minh" loading="lazy" class="lightbox-trigger" />
+            <div class="gallery-overlay">
+              <span>Bình yên tâm hồn</span>
+              <strong>Đón năng lượng ban mai thanh khiết</strong>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-up">
+            <img src="1793347370760_2229516208072650681_9100847795049345797_88e7ad21c2f6e2c1ec4c245154b61d4c.jpg" alt="Khoảnh khắc hạnh phúc bên biển xanh" loading="lazy" class="lightbox-trigger" />
+            <div class="gallery-overlay">
+              <span>Yêu thương đồng hành</span>
+              <strong>Bên nhau trên mọi cung đường đẹp</strong>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-up">
+            <img src="1793347374150_2229516208072650681_9100847795049345797_6923f707825b8a07099cecea57d7f0f1.jpg" alt="Thể thao chạy bộ buổi sáng tràn đầy sức sống" loading="lazy" class="lightbox-trigger" />
+            <div class="gallery-overlay">
+              <span>Sống khỏe mỗi ngày</span>
+              <strong>Năng lượng thể thao &amp; Sức sống dồi dào</strong>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-up">
+            <img src="1793347378496_2229516208072650681_9100847795049345797_1d1fc055fa308d643d08e1a71f0d1157.jpg" alt="Tình bạn gắn kết bền chặt" loading="lazy" class="lightbox-trigger" />
+            <div class="gallery-overlay">
+              <span>Tình bạn tri kỷ</span>
+              <strong>Lan tỏa niềm vui đến mọi người</strong>
+            </div>
+          </div>
+
+          <div class="gallery-item item-wide reveal-up">
+            <img src="a6.jpg" alt="Chuyến tham quan ý nghĩa cùng tập thể bạn bè" loading="lazy" class="lightbox-trigger" />
+            <div class="gallery-overlay">
+              <span>Kỷ niệm đáng nhớ</span>
+              <strong>Hành trình khám phá văn hóa &amp; lịch sử</strong>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-up">
+            <img src="1793347368013_2229516208072650681_9100847795049345797_26a28c02cf66c7193416fb2418c74160.jpg" alt="Sum vầy ấm cúng bên bạn bè" loading="lazy" class="lightbox-trigger" />
+            <div class="gallery-overlay">
+              <span>Sum vầy ấm áp</span>
+              <strong>Những bữa cơm thân mật tràn ngập tiếng cười</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & SOCIAL HUB SECTION -->
+    <section id="lien-he" class="section contact-section">
+      <div class="container">
+        <div class="contact-wrapper reveal-up">
+          <div class="contact-left">
+            <span class="section-eyebrow">Thông Tin Liên Hệ Chính Thức</span>
+            <h2 class="section-title">Kết Nối Cùng <span class="gradient-serif">Mai Hường</span></h2>
+            <p class="contact-lead">
+              Hãy liên hệ ngay với <strong>Mai Hường</strong> để cùng trò chuyện, giao lưu về cuộc sống tươi đẹp, hoặc tìm hiểu về các buổi chia sẻ ứng dụng AI sáng tạo âm nhạc &amp; video!
+            </p>
+
+            <!-- Direct Contact Cards -->
+            <div class="contact-cards-list">
+              <!-- Phone / Zalo Card -->
+              <div class="contact-card-item">
+                <div class="c-icon phone-bg">
+                  <i data-lucide="phone-call"></i>
+                </div>
+                <div class="c-details">
+                  <span class="c-label">Số điện thoại &amp; Zalo</span>
+                  <a href="tel:0982909515" class="c-value">0982 909 515</a>
+                </div>
+                <div class="c-actions">
+                  <button class="btn-copy" id="copyPhoneBtn" data-copy="0982909515" title="Sao chép số điện thoại">
+                    <i data-lucide="copy"></i>
+                    <span>Sao chép</span>
+                  </button>
+                  <a href="tel:0982909515" class="btn-action-circle" title="Gọi ngay">
+                    <i data-lucide="phone-forwarded"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Facebook Card -->
+              <div class="contact-card-item">
+                <div class="c-icon fb-bg">
+                  <i data-lucide="facebook"></i>
+                </div>
+                <div class="c-details">
+                  <span class="c-label">Trang Facebook Cá Nhân</span>
+                  <a href="https://www.facebook.com/huong.tn.34518" target="_blank" rel="noopener noreferrer" class="c-value">
+                    facebook.com/huong.tn.34518
+                  </a>
+                </div>
+                <div class="c-actions">
+                  <a href="https://www.facebook.com/huong.tn.34518" target="_blank" rel="noopener noreferrer" class="btn-visit">
+                    <span>Kết bạn FB</span>
+                    <i data-lucide="arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- YouTube Card -->
+              <div class="contact-card-item">
+                <div class="c-icon yt-bg">
+                  <i data-lucide="youtube"></i>
+                </div>
+                <div class="c-details">
+                  <span class="c-label">Video YouTube Nổi Bật</span>
+                  <a href="https://youtu.be/lOwUVSzzGEw?si=_O3grBPipm6LDsB2" target="_blank" rel="noopener noreferrer" class="c-value">
+                    youtu.be/lOwUVSzzGEw
+                  </a>
+                </div>
+                <div class="c-actions">
+                  <a href="https://youtu.be/lOwUVSzzGEw?si=_O3grBPipm6LDsB2" target="_blank" rel="noopener noreferrer" class="btn-visit">
+                    <span>Mở YouTube</span>
+                    <i data-lucide="play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-right">
+            <div class="message-box-card">
+              <h3>Gửi Lời Chúc &amp; Kết Nối Ngay</h3>
+              <p>Để lại thông tin hoặc lời nhắn, Mai Hường sẽ phản hồi bạn sớm nhất:</p>
+
+              <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                  <label for="senderName">Họ và tên của bạn</label>
+                  <input type="text" id="senderName" placeholder="Nhập tên của bạn..." required />
+                </div>
+
+                <div class="form-group">
+                  <label for="senderPhone">Số điện thoại / Zalo</label>
+                  <input type="tel" id="senderPhone" placeholder="Nhập SĐT để dễ dàng kết nối..." />
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage">Lời nhắn gửi đến Mai Hường</label>
+                  <textarea id="senderMessage" rows="4" placeholder="Chào chị Mai Hường, mình rất ấn tượng với trang web và muốn kết nối..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg">
+                  <i data-lucide="send" class="btn-icon"></i>
+                  <span>Gửi Lời Nhắn Yêu Thương</span>
+                </button>
+              </form>
+
+              <div id="formFeedback" class="form-feedback" hidden>
+                <i data-lucide="sparkles"></i>
+                <div>
+                  <strong>Cảm ơn bạn đã gửi lời nhắn!</strong>
+                  <p id="feedbackText">Để kết nối nhanh nhất, bạn hãy gọi hoặc nhắn Zalo số <strong>0982 909 515</strong> hoặc nhắn qua Facebook của Mai Hường nhé!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#trang-chu" class="brand-logo">
+          <img src="a1.jpg" alt="Mai Hường" class="brand-avatar" />
+          <div class="brand-text">
+            <span class="brand-name">Mai Hường</span>
+            <span class="brand-tagline">Cuộc Sống Tươi Đẹp</span>
+          </div>
+        </a>
+        <p class="footer-bio">
+          Sáng tạo • Kết nối • Lan tỏa • Yêu thương. Nơi chia sẻ năng lượng tích cực, niềm đam mê công nghệ AI và những khoảnh khắc tuyệt đẹp của cuộc sống.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Khám Phá</h4>
+        <ul>
+          <li><a href="#trang-chu">Trang chủ</a></li>
+          <li><a href="#cau-chuyen">Câu chuyện Mai Hường</a></li>
+          <li><a href="#video-noi-bat">Video YouTube nổi bật</a></li>
+          <li><a href="#sang-tao-ai">Từ AI đến Trái Tim</a></li>
+          <li><a href="#khoanh-khac">Album Khoảnh khắc</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Thông Tin Liên Hệ</h4>
+        <ul>
+          <li>
+            <a href="tel:0982909515">
+              <i data-lucide="phone"></i>
+              <span>Điện thoại / Zalo: <strong>0982 909 515</strong></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/huong.tn.34518" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="facebook"></i>
+              <span>Facebook: fb.com/huong.tn.34518</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/lOwUVSzzGEw?si=_O3grBPipm6LDsB2" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="youtube"></i>
+              <span>YouTube: Xem Video Nổi Bật</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 <strong>Mai Hường — Cuộc Sống Tươi Đẹp</strong>. Mọi quyền được bảo lưu.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK ACTION DOCK -->
+  <div class="floating-dock" aria-label="Liên hệ nhanh">
+    <a href="tel:0982909515" class="dock-btn dock-phone" title="Gọi 0982 909 515">
+      <i data-lucide="phone-call"></i>
+      <span class="dock-tooltip">Gọi: 0982 909 515</span>
+    </a>
+    <a href="https://zalo.me/0982909515" target="_blank" rel="noopener noreferrer" class="dock-btn dock-zalo" title="Nhắn Zalo 0982 909 515">
+      <span class="zalo-text">Zalo</span>
+      <span class="dock-tooltip">Zalo: 0982 909 515</span>
+    </a>
+    <a href="https://www.facebook.com/huong.tn.34518" target="_blank" rel="noopener noreferrer" class="dock-btn dock-fb" title="Facebook Mai Hường">
+      <i data-lucide="facebook"></i>
+      <span class="dock-tooltip">Facebook Mai Hường</span>
+    </a>
+    <a href="https://youtu.be/lOwUVSzzGEw?si=_O3grBPipm6LDsB2" target="_blank" rel="noopener noreferrer" class="dock-btn dock-yt" title="Xem YouTube">
+      <i data-lucide="youtube"></i>
+      <span class="dock-tooltip">Xem Video YouTube</span>
+    </a>
+  </div>
+
+  <!-- IMAGE LIGHTBOX MODAL -->
+  <div id="lightboxModal" class="lightbox-modal" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Đóng ảnh">
+      <i data-lucide="x"></i>
+    </button>
+    <img id="lightboxImg" src="" alt="Xem ảnh phóng to" />
+    <p id="lightboxCaption" class="lightbox-caption"></p>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <i data-lucide="check-circle"></i>
+    <span id="toastMsg">Đã sao chép số điện thoại: 0982 909 515</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
